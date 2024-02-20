@@ -1,0 +1,22 @@
+{
+  "name": "data_structures-algorithms",
+  "version": "1.0.0",
+  "description": "A repo for documenting/learning Data Structures and Algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcrlsn/data_structures-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcrlsn/data_structures-algorithms/issues"
+  },
+  "homepage": "https://github.com/dcrlsn/data_structures-algorithms#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
