@@ -45,6 +45,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+kata-machine/
+kata-machine/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -140,5 +142,6 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
 
 # End of https://www.toptal.com/developers/gitignore/api/node
