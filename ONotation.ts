@@ -91,12 +91,35 @@ function sumCharCodesSquared(n: string): number {
 
 function sumCharCodesCubed(n: string): number {
     let sum = 0;
-    for (let i = 0; i < n.length; i++){
-        for(let j=0; j< n.length; j++){
-            for(let k=0; k<n.length;k++){
+    for (let i = 0; i < n.length; i++) {
+        for (let j = 0; j < n.length; j++) {
+            for (let k = 0; k < n.length; k++) {
                 sum += n.charCodeAt(i) * n.charCodeAt(j) * n.charCodeAt(k);
             }
         }
     }
     return sum;
+}
+
+/* O(sqrt(N)) Time Complexity
+    Very rare*/
+function two_crystal_balls(breaks: boolean[]): number {
+
+    const jumpAmount = Math.floor(Math.sqrt(breaks.length));
+
+    let i = jumpAmount;
+    for (; i < breaks.length; i += jumpAmount) {
+        if (breaks[i]) {
+            break;
+        }
+    }
+    i -= jumpAmount;
+
+    for (let j = 0; j < jumpAmount && i < breaks.length; j++, i++) {
+        if (breaks[i]) {
+            return i;
+        }
+    }
+
+    return -1;
 }
